@@ -1,0 +1,19 @@
+<html>
+  <title>Test Page, console.log</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <script src="test.js"></script>
+  <body>
+    Makeing console.log work under our beloved IE9<br/>
+    <script>
+      var params = getUrlParams();
+      if (params.mock == "true") {
+        alert("Mocking the console object");
+        mock_console();
+      }
+      else {
+        alert("Console object is not defined in IE9");
+      }
+      use_console();
+    </script>
+  </body>
+</html>
